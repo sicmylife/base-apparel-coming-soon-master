@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla:ital,wght@0,400;0,700;1,400&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Manrope:wght@500;700&family=Open+Sans:ital@0;1&family=Poppins:wght@200&family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --rosa:  hsl(0, 36%, 70%);
+  --rosamain: hsl(0, 93%, 68%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  background-color: #f9f5f1;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+main .logo {
+  position: absolute;
+  top: 250px;
+  left: 470px;
+}
+
+.container {
+  padding-top: 250px;
+  padding-right: 50px;
+  position: relative;
+}
+
+.container h1 {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.container h1 span {
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: var(--rosa);
+}
+
+.container p {
+  padding-top: 1rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--rosa);
+  width: 430px;
+}
+
+.container .form {
+  margin-top: 20px;
+}
+
+.container .email {
+  opacity: 0.7;
+  padding: 14px;
+  width: 82%;
+  border: 1px solid var(--rosa);
+  border-radius: 20px;
+  background-image: linear-gradient(135deg, white, #fff5f5);
+}
+
+.container .email::-webkit-input-placeholder {
+  color: var(--rosa);
+  opacity: .7;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+.container .email:-ms-input-placeholder {
+  color: var(--rosa);
+  opacity: .7;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+.container .email::-ms-input-placeholder {
+  color: var(--rosa);
+  opacity: .7;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+.container .email::placeholder {
+  color: var(--rosa);
+  opacity: .7;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+
+.container .boton-wrap {
+  width: 30%;
+  position: relative;
+  bottom: 45px;
+  left: 70%;
+}
+
+.container .btn {
+  padding: 10px 27px;
+  border-radius: 20px;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: 1px solid var(--rosa);
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px 1px rgba(249, 98, 98, 0.483);
+          box-shadow: 0 0 10px 1px rgba(249, 98, 98, 0.483);
+}
+
+.container .btn:hover {
+  opacity: .7;
+}
+
+.container .error {
+  position: relative;
+  top: 5px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.container .error-text {
+  margin-top: -50px;
+  color: var(--rosamain);
+  visibility: hidden;
+}
+
+.imgBox {
+  width: 600px;
+  height: 550px;
+  background-image: url("./images/hero-desktop.jpg");
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  main {
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+  }
+  main .logo {
+    position: relative;
+    top: 50px;
+    left: 40px;
+  }
+  main .imgBox {
+    margin-top: 100px;
+    width: 400px;
+    height: 250px;
+    background-image: url("./images/hero-mobile.jpg");
+    background-repeat: no-repeat;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 370px;
+    padding-top: 20px;
+  }
+  .container h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .container h1 span {
+    font-size: 2rem;
+  }
+  .container p {
+    width: 300px;
+    text-align: center;
+  }
+  .container .boton-wrap {
+    bottom: 72px;
+    left: 64%;
+  }
+  .container .btn {
+    padding: 9px 35px;
+  }
+  .container .attribution {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+  }
+  .container .attribution a {
+    font-size: 11px;
+    margin-left: 100px;
+  }
+  .container .error {
+    top: 40px;
+    right: 30px;
+  }
+  .container .error-text {
+    margin-top: -70px;
+    margin-left: -20px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  padding-bottom: 50px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
